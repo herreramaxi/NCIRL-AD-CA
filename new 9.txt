@@ -1,0 +1,36 @@
+one question about customer associations. Why not to have a many to many (CustomersAssociation) as following with one composite pk instead of unique constraint in association type? 
+
+CustomersAssociation
+* customerOneId (FK to customer)
+* customerTwoId (FK to customer)
+* associationTypeId (FK to association)
+PK(customer1Id, customer2Id, associationTypeId)
+
+CustomersAssociation
+* customerOneId (FK to customer)
+* customerTwoId (FK to customer)
+* associationTypeId (FK to association)
+PK(customer1Id, customer2Id, associationTypeId)
+
+
+account type
+1, deposit
+2,current
+3, loan
+
+customer type
+1, personal
+2, corporate
+
+security type
+1,cash
+2, shares
+3, property
+
+associationTypes
+1,Surveyor
+2, property developer
+3,auditor
+4, accountant
+
+
